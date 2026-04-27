@@ -80,7 +80,7 @@
       "sending": "កំពុងផ្ញើ...",
       "success": "សារត្រូវបានផ្ញើយ៉ាងជោគជ័យ។ ខ្ញុំនឹងឆ្លើយតបឆាប់ៗនេះ។",
       "error": "ការផ្ញើសារបរាជ័យ។ សូមព្យាយាមម្តងទៀត។",
-      "missingConfig": "EmailJS មិនទាន់បានកំណត់ទេ។ សូមបន្ថែម VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID និង VITE_EMAILJS_PUBLIC_KEY នៅក្នុងឯកសារ .env។"
+      "missingConfig": "EmailJS មិនទាន់បានកំណត់ទេ។ សូមកំណត់ VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID និង VITE_EMAILJS_PUBLIC_KEY នៅក្នុង .env (local) ឬ Environment Variables របស់ hosting ហើយ build/deploy ម្តងទៀត។"
     },
     "tooltips": {
       "facebook": "តាមដានខ្ញុំនៅលើ Facebook",

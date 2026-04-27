@@ -80,7 +80,7 @@
       "sending": "Sending...",
       "success": "Message sent successfully. I will get back to you soon.",
       "error": "Failed to send message. Please try again.",
-      "missingConfig": "EmailJS is not configured. Add VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY in your .env file."
+      "missingConfig": "EmailJS is not configured. Add VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY in your local .env or hosting environment settings, then rebuild/redeploy."
     },
     "tooltips": {
       "facebook": "Follow me on Facebook",

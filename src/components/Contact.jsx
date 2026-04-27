@@ -34,11 +34,19 @@ function Contact() {
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID?.trim();
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID?.trim();
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY?.trim();
-    const hasPlaceholderValue = [serviceId, templateId, publicKey].some(
-      (value) => value?.includes('your_'),
-    );
+    const configValues = [
+      { key: 'VITE_EMAILJS_SERVICE_ID', value: serviceId },
+      { key: 'VITE_EMAILJS_TEMPLATE_ID', value: templateId },
+      { key: 'VITE_EMAILJS_PUBLIC_KEY', value: publicKey },
+    ];
+    const missingConfigKeys = configValues
+      .filter(({ value }) => !value || value.includes('your_'))
+      .map(({ key }) => key);
 
-    if (!serviceId || !templateId || !publicKey || hasPlaceholderValue) {
+    if (missingConfigKeys.length > 0) {
+      console.error(
+        `EmailJS config is missing. Define these env vars before building: ${missingConfigKeys.join(', ')}`,
+      );
       setStatus({
         type: 'error',
         message: t('contact.form.missingConfig'),
