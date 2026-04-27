@@ -1,0 +1,101 @@
+﻿{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Available for freelance and full-time roles",
+    "name": "Boeun Narong",
+    "title": "Full Stack Developer",
+    "intro": "I design and build reliable web products with clean frontend experiences, scalable backend architecture, and practical business impact.",
+    "viewProjects": "View Projects",
+    "contact": "Contact",
+    "profileLabel": "Profile",
+    "profileSummary": "Focused on building scalable full-stack products with clean UI, stable backend systems, and practical business value.",
+    "snapshotLabel": "Quick Snapshot",
+    "experienceLabel": "Years Experience",
+    "experienceValue": "4+",
+    "projectsLabel": "Projects Delivered",
+    "projectsValue": "35+",
+    "stackLabel": "Core Stack",
+    "stackValue": "React, Laravel, C#, MySQL"
+  },
+  "about": {
+    "title": "About Me",
+    "summary1": "I am a full stack developer focused on delivering maintainable and high-performance applications for real business workflows.",
+    "summary2": "My approach combines clean code, reusable component architecture, and strong attention to user experience. From frontend polish to backend reliability, I build products that are production-ready and easy to scale."
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "A practical stack for shipping modern applications from UI to database.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Selected projects that highlight product thinking, engineering quality, and polished user interfaces.",
+    "github": "GitHub",
+    "liveDemo": "Live Demo",
+    "items": {
+      "erpPortal": {
+        "title": "Enterprise ERP Portal",
+        "description": "A role-based internal portal for operations, finance, and reporting with secure permissions and dynamic dashboard modules."
+      },
+      "bookingPlatform": {
+        "title": "Service Booking Platform",
+        "description": "A booking workflow with real-time availability, payment tracking, and responsive customer-facing pages for fast conversion."
+      },
+      "commerceDashboard": {
+        "title": "E-commerce Admin Dashboard",
+        "description": "A management dashboard for products, orders, and customer analytics with streamlined operations and clean visual hierarchy."
+      },
+      "analyticsSuite": {
+        "title": "Business Analytics Suite",
+        "description": "A KPI and reporting platform that turns operational data into actionable insights with chart-rich and export-friendly views."
+      },
+      "finalEtec": {
+        "title": "Clothing E-commerce Mobile App",
+        "description": "A Flutter mobile application connected with Firebase for authentication, real-time data handling, and streamlined student project workflows. Intergrated with real payment gateway for seamless transactions."
+      },
+      "cafePosBakong": {
+        "title": "Cafe POS System with Bakong Payment",
+        "description": "A cafe point-of-sale system for orders, table management, and receipts with integrated Bakong KHQR payment support for fast and secure cashless checkout."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let us discuss your project requirements and build something meaningful together.",
+    "socialTitle": "Social Profiles",
+    "socialSubtitle": "Connect with me on these platforms for updates, collaborations, and new opportunities.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully. I will get back to you soon.",
+      "error": "Failed to send message. Please try again.",
+      "missingConfig": "EmailJS is not configured. Add VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY in your .env file."
+    },
+    "tooltips": {
+      "facebook": "Follow me on Facebook",
+      "telegram": "Message me on Telegram",
+      "linkedin": "Connect with me on LinkedIn",
+      "github": "Follow me on GitHub",
+      "tiktok": "Follow me on TikTok"
+    }
+  },
+  "effects": {
+    "startFlowerFall": "Start Flower Snow",
+    "stopFlowerFall": "Stop Flower Snow",
+    "scrollToTop": "Scroll to top"
+  },
+  "footer": {
+    "copyright": "© {{year}} Boeun Narong. All rights reserved."
+  }
+}

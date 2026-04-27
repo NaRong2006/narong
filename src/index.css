@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 min-h-screen bg-slate-50 text-slate-900 antialiased transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100;
+    font-family: 'Sora', 'Noto Sans Khmer', sans-serif;
+  }
+
+  * {
+    @apply border-slate-200 dark:border-slate-800;
+  }
+
+  ::selection {
+    @apply bg-cyan-200 text-slate-900 dark:bg-cyan-500/40 dark:text-slate-100;
+  }
+}
+
+@layer components {
+  .section-wrap {
+    @apply py-20 sm:py-24;
+  }
+
+  .section-title {
+    @apply text-3xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply mt-4 max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-slate-300 sm:text-base;
+  }
+}
+
+@keyframes flower-fall {
+  0% {
+    transform: translate3d(0, -12vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate3d(var(--drift), 50vh, 0) rotate(170deg);
+  }
+
+  100% {
+    transform: translate3d(calc(var(--drift) * -0.6), 112vh, 0) rotate(340deg);
+    opacity: 0;
+  }
+}
+
+.flower-flake {
+  position: absolute;
+  top: 0;
+  width: var(--size);
+  height: var(--size);
+  will-change: transform, opacity;
+  animation-name: flower-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(0 3px 6px rgba(138, 104, 24, 0.35));
+}
