@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import profilePlaceholder from '../assets/ChatGPT Image Apr 21, 2026, 09_40_13 PM.png';
+import profilePlaceholder from '../assets/ChatGPT Image May 4, 2026, 08_36_51 PM.png';
 
 function Hero() {
   const { t } = useTranslation();
@@ -23,16 +23,16 @@ function Hero() {
           <p className="mt-4 text-xl font-semibold text-cyan-700 dark:text-cyan-300 sm:text-2xl">
             {t('hero.title')}
           </p>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-600 dark:text-slate-300 sm:text-lg">
+          <p className="max-w-xl mt-6 text-base leading-relaxed text-slate-600 dark:text-slate-300 sm:text-lg">
             {t('hero.intro')}
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4 mt-10">
             <motion.a
               href="#projects"
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="rounded-xl bg-cyan-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-600/30 transition hover:bg-cyan-500"
+              className="px-6 py-3 text-sm font-semibold text-white transition shadow-lg rounded-xl bg-cyan-600 shadow-cyan-600/30 hover:bg-cyan-500"
             >
               {t('hero.viewProjects')}
             </motion.a>
@@ -40,7 +40,7 @@ function Hero() {
               href="#contact"
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:border-slate-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-slate-500"
+              className="px-6 py-3 text-sm font-semibold transition bg-white border rounded-xl border-slate-300 text-slate-800 hover:border-slate-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-slate-500"
             >
               {t('hero.contact')}
             </motion.a>
@@ -60,11 +60,11 @@ function Hero() {
               className="h-[24rem] w-full object-cover object-[center_16%] sm:h-[27rem]"
               loading="eager"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/65 via-transparent to-slate-950/5" />
+            <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-slate-950/65 via-transparent to-slate-950/5" />
           </div>
 
-          <div className="flex items-center gap-3 bg-white/90 px-4 py-3 dark:bg-slate-950/70">
-            <span className="h-9 w-1 rounded-full bg-cyan-500" />
+          <div className="flex items-center gap-3 px-4 py-3 bg-white/90 dark:bg-slate-950/70">
+            <span className="w-1 rounded-full h-9 bg-cyan-500" />
             <div>
               <p className="text-sm font-semibold text-slate-900 dark:text-slate-100">{t('hero.name')}</p>
               <p className="text-xs text-slate-500 dark:text-slate-400">{t('hero.title')}</p>
